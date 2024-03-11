@@ -1,0 +1,12 @@
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/testes.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/ex1-2-3.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/ex4.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/ex5.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/ex6.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/ex7.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/ex8.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/ex9.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/ex10.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/ex11.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

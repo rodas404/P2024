@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Ficha1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ex1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex1-Debug-92698a85eb23e2d2b801.json",
+					"name" : "ex1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex2-Debug-e7e3bd031db976e7499f.json",
+					"name" : "ex2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex3-Debug-4a62d6c36d048d8316b8.json",
+					"name" : "ex3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex4-Debug-b1a69f5fedf15bf8c7a2.json",
+					"name" : "ex4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex5-Debug-400c22ffd5f439884b9f.json",
+					"name" : "ex5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex6-Debug-9d6469fd4153db49ad16.json",
+					"name" : "ex6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teste::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teste-Debug-310b8c81dad33087fda5.json",
+					"name" : "teste",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha1/cmake-build-debug",
+		"source" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

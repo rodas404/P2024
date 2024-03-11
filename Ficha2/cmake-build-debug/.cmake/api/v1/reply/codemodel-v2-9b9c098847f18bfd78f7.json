@@ -1,0 +1,159 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Ficha2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ex1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex1-Debug-92698a85eb23e2d2b801.json",
+					"name" : "ex1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex10::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex10-Debug-3c96c7d1602fe4d8a7f2.json",
+					"name" : "ex10",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex11::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex11-Debug-0997b818eb1b682c6936.json",
+					"name" : "ex11",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex2-Debug-e7e3bd031db976e7499f.json",
+					"name" : "ex2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex3-Debug-4a62d6c36d048d8316b8.json",
+					"name" : "ex3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex4-Debug-b1a69f5fedf15bf8c7a2.json",
+					"name" : "ex4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex5-Debug-400c22ffd5f439884b9f.json",
+					"name" : "ex5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex6-Debug-9d6469fd4153db49ad16.json",
+					"name" : "ex6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex7-Debug-4120b05828ec4fc930fa.json",
+					"name" : "ex7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex8-Debug-df56b47c72cbaa7d63e1.json",
+					"name" : "ex8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex9-Debug-e7110f73ff119eeb02f2.json",
+					"name" : "ex9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teste::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teste-Debug-310b8c81dad33087fda5.json",
+					"name" : "teste",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha2/cmake-build-debug",
+		"source" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
