@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "Desafios",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "desafio1::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-desafio1-Debug-6b8dce39e4a9d4d747ff.json",
 					"name" : "desafio1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "desafio2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-desafio2-Debug-e106ebe0812e3582ba3a.json",
+					"name" : "desafio2",
 					"projectIndex" : 0
 				}
 			]
