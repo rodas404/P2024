@@ -1,0 +1,4 @@
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/cmake-build-debug/CMakeFiles/teste.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/cmake-build-debug/CMakeFiles/ex2.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/cmake-build-debug/CMakeFiles/rebuild_cache.dir

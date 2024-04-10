@@ -28,7 +28,7 @@ int calculaNota(data* limD, submissao sub){
             nota = 10 - ((sub.horaSub.h*60 + sub.horaSub.m)-(11*60 + 55));
     }
 
-    if(limD->mes == 4 || limD->mes == 6 || limD->mes == 9 || limD->mes == 11 && limD->dia == 30){
+    if((limD->mes == 4 || limD->mes == 6 || limD->mes == 9 || limD->mes == 11) && limD->dia == 30){
         (limD->mes)++;
         (limD->dia) = 1;
     }

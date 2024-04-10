@@ -6,7 +6,7 @@ int main(){
 
     voo tab[300]={{1,"pila turbo", "cagalhao", {10,19}}};
     tempo t= hora_atual();
-    int total = 1, index, op;
+    int total = 1, op;
 
     do{
         printf("1. Introduzir novos voos\n");

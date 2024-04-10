@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -41,15 +43,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "desafio1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-desafio1-Debug-6b8dce39e4a9d4d747ff.json",
+					"jsonFile" : "target-desafio1-Debug-2d48332317a1ac691d2d.json",
 					"name" : "desafio1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "desafio2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-desafio2-Debug-e106ebe0812e3582ba3a.json",
+					"jsonFile" : "target-desafio2-Debug-c804b6dbaaafe55a794d.json",
 					"name" : "desafio2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "testes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-testes-Debug-33d14f2c4014157ea094.json",
+					"name" : "testes",
 					"projectIndex" : 0
 				}
 			]

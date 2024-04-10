@@ -41,6 +41,39 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target testes
+
+
+#############################################
+# Order-only phony target for testes
+
+build cmake_object_order_depends_target_testes: phony || CMakeFiles/testes.dir
+
+build CMakeFiles/testes.dir/main.c.obj: C_COMPILER__testes_unscanned_Debug C$:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/main.c || cmake_object_order_depends_target_testes
+  DEP_FILE = CMakeFiles\testes.dir\main.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\testes.dir
+  OBJECT_FILE_DIR = CMakeFiles\testes.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target testes
+
+
+#############################################
+# Link the executable testes.exe
+
+build testes.exe: C_EXECUTABLE_LINKER__testes_Debug CMakeFiles/testes.dir/main.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\testes.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = testes.exe
+  TARGET_IMPLIB = libtestes.dll.a
+  TARGET_PDB = testes.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target desafio1
 
 
@@ -142,6 +175,8 @@ build desafio1: phony desafio1.exe
 
 build desafio2: phony desafio2.exe
 
+build testes: phony testes.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -150,7 +185,7 @@ build desafio2: phony desafio2.exe
 #############################################
 # Folder: C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug
 
-build all: phony desafio1.exe desafio2.exe
+build all: phony testes.exe desafio1.exe desafio2.exe
 
 # =============================================================================
 # Built-in targets
