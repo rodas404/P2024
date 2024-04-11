@@ -82,8 +82,8 @@ build teste.exe: C_EXECUTABLE_LINKER__teste_Debug CMakeFiles/teste.dir/main.c.ob
 
 build cmake_object_order_depends_target_ex2: phony || CMakeFiles/ex2.dir
 
-build CMakeFiles/ex2.dir/ex2.c.obj: C_COMPILER__ex2_unscanned_Debug C$:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/ex2.c || cmake_object_order_depends_target_ex2
-  DEP_FILE = CMakeFiles\ex2.dir\ex2.c.obj.d
+build CMakeFiles/ex2.dir/ex2-3.c.obj: C_COMPILER__ex2_unscanned_Debug C$:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/ex2-3.c || cmake_object_order_depends_target_ex2
+  DEP_FILE = CMakeFiles\ex2.dir\ex2-3.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ex2.dir
   OBJECT_FILE_DIR = CMakeFiles\ex2.dir
@@ -96,7 +96,7 @@ build CMakeFiles/ex2.dir/ex2.c.obj: C_COMPILER__ex2_unscanned_Debug C$:/Users/fo
 #############################################
 # Link the executable ex2.exe
 
-build ex2.exe: C_EXECUTABLE_LINKER__ex2_Debug CMakeFiles/ex2.dir/ex2.c.obj
+build ex2.exe: C_EXECUTABLE_LINKER__ex2_Debug CMakeFiles/ex2.dir/ex2-3.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ex2.dir
@@ -105,6 +105,78 @@ build ex2.exe: C_EXECUTABLE_LINKER__ex2_Debug CMakeFiles/ex2.dir/ex2.c.obj
   TARGET_FILE = ex2.exe
   TARGET_IMPLIB = libex2.dll.a
   TARGET_PDB = ex2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ex4
+
+
+#############################################
+# Order-only phony target for ex4
+
+build cmake_object_order_depends_target_ex4: phony || CMakeFiles/ex4.dir
+
+build CMakeFiles/ex4.dir/ex4-5/consultas.c.obj: C_COMPILER__ex4_unscanned_Debug C$:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/ex4-5/consultas.c || cmake_object_order_depends_target_ex4
+  DEP_FILE = CMakeFiles\ex4.dir\ex4-5\consultas.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ex4.dir
+  OBJECT_FILE_DIR = CMakeFiles\ex4.dir\ex4-5
+
+build CMakeFiles/ex4.dir/ex4-5/main.c.obj: C_COMPILER__ex4_unscanned_Debug C$:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/ex4-5/main.c || cmake_object_order_depends_target_ex4
+  DEP_FILE = CMakeFiles\ex4.dir\ex4-5\main.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ex4.dir
+  OBJECT_FILE_DIR = CMakeFiles\ex4.dir\ex4-5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ex4
+
+
+#############################################
+# Link the executable ex4.exe
+
+build ex4.exe: C_EXECUTABLE_LINKER__ex4_Debug CMakeFiles/ex4.dir/ex4-5/consultas.c.obj CMakeFiles/ex4.dir/ex4-5/main.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ex4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ex4.exe
+  TARGET_IMPLIB = libex4.dll.a
+  TARGET_PDB = ex4.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ex1
+
+
+#############################################
+# Order-only phony target for ex1
+
+build cmake_object_order_depends_target_ex1: phony || CMakeFiles/ex1.dir
+
+build CMakeFiles/ex1.dir/ex1.c.obj: C_COMPILER__ex1_unscanned_Debug C$:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/ex1.c || cmake_object_order_depends_target_ex1
+  DEP_FILE = CMakeFiles\ex1.dir\ex1.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ex1.dir
+  OBJECT_FILE_DIR = CMakeFiles\ex1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ex1
+
+
+#############################################
+# Link the executable ex1.exe
+
+build ex1.exe: C_EXECUTABLE_LINKER__ex1_Debug CMakeFiles/ex1.dir/ex1.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ex1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ex1.exe
+  TARGET_IMPLIB = libex1.dll.a
+  TARGET_PDB = ex1.exe.dbg
 
 
 #############################################
@@ -132,7 +204,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build ex1: phony ex1.exe
+
 build ex2: phony ex2.exe
+
+build ex4: phony ex4.exe
 
 build teste: phony teste.exe
 
@@ -144,7 +220,7 @@ build teste: phony teste.exe
 #############################################
 # Folder: C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha8/cmake-build-debug
 
-build all: phony teste.exe ex2.exe
+build all: phony teste.exe ex2.exe ex4.exe ex1.exe
 
 # =============================================================================
 # Built-in targets

@@ -12,6 +12,51 @@ struct pessoa{
 };
 
 
+void ordenaIMC(pno lista){
+    int trocou;
+    pno atual;
+    pno proximo = NULL;
+
+    if (lista == NULL)
+        return;
+
+    do {
+        trocou = 0;
+        atual = lista;
+
+        while (atual->prox != proximo) {
+            if (atual->imc > atual->prox->imc) {
+                // Troca os dados entre os nós
+                float tempImc = atual->imc;
+                atual->imc = atual->prox->imc;
+                atual->prox->imc = tempImc;
+
+                float tempPeso = atual->peso;
+                atual->peso = atual->prox->peso;
+                atual->prox->peso = tempPeso;
+
+                float tempAltura = atual->altura;
+                atual->altura = atual->prox->altura;
+                atual->prox->altura = tempAltura;
+
+                int tempId = atual->id;
+                atual->id = atual->prox->id;
+                atual->prox->id = tempId;
+
+                char tempNome[100];
+                strcpy(tempNome, atual->nome);
+                strcpy(atual->nome, atual->prox->nome);
+                strcpy(atual->prox->nome, tempNome);
+
+                trocou = 1;
+            }
+            atual = atual->prox;
+        }
+        proximo = atual;
+    }
+    while (trocou);
+}
+
 // Função auxiliar para obter dados do utilizador e prencher um novo nó a inserir na lista
 // Recebe endereço do nó a preencher
 void getDados(pno p, pno lista){
@@ -70,6 +115,7 @@ pno addLista(pno lista){
 // Função que mostra o conteúdo da lista
 // Recebe ponteiro de lista como parâmetro
 void mostraLista(pno lista){
+    ordenaIMC(lista);
     while (lista != NULL){
         printf("%d - %s\n", lista->id, lista->nome);
         printf("P: %.1f\tA: %.1f\tIMC: %.2f\n\n", lista->peso, lista->altura, lista->imc);
