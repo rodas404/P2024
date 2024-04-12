@@ -36,5 +36,6 @@ pCliente eliminaCliente(pCliente p, int id);
 
 pCliente acessoParque(pCliente p, int id, hora x);
 
+pCliente eliminaAcessos(pCliente p);
 
 #endif //P2324_AULA9_PARQUE_H

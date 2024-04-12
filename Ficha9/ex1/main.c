@@ -37,6 +37,9 @@ int main(){
     lista = acessoParque(lista, 19, (hora){18,15});
     mostraTudo(lista);
 
+    printf("\n-------\n");
+    lista = eliminaAcessos(lista);
+    mostraTudo(lista);
 
     libertaTudo(lista);
     return 0;
