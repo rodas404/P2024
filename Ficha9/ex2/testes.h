@@ -19,5 +19,10 @@ struct pessoa{
 void mostraInfo(pno p, struct sala* s, int tam);
 void mostraMaxSala(pno p, struct sala* s, int tam);
 int mesmaSala(pno p, char* aluno1, char* aluno2);
+pno adicionaAl(pno lista, struct sala *s, int tot, char *nome, char *num);
+struct sala* transfereAl(pno lista, struct sala *s, int *tot, char *nome, char *nSala);
+pno criaAlunos(struct sala* s);
+struct sala* criaSalas(int *tot);
+
 
 #endif //FICHA9_TESTES_H
