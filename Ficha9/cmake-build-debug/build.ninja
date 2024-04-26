@@ -157,6 +157,45 @@ build ex3.exe: C_EXECUTABLE_LINKER__ex3_Debug CMakeFiles/ex3.dir/ex3/main.c.obj 
   TARGET_IMPLIB = libex3.dll.a
   TARGET_PDB = ex3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target ex4
+
+
+#############################################
+# Order-only phony target for ex4
+
+build cmake_object_order_depends_target_ex4: phony || CMakeFiles/ex4.dir
+
+build CMakeFiles/ex4.dir/ex4/main.c.obj: C_COMPILER__ex4_unscanned_Debug C$:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha9/ex4/main.c || cmake_object_order_depends_target_ex4
+  DEP_FILE = CMakeFiles\ex4.dir\ex4\main.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ex4.dir
+  OBJECT_FILE_DIR = CMakeFiles\ex4.dir\ex4
+
+build CMakeFiles/ex4.dir/ex4/circular.c.obj: C_COMPILER__ex4_unscanned_Debug C$:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha9/ex4/circular.c || cmake_object_order_depends_target_ex4
+  DEP_FILE = CMakeFiles\ex4.dir\ex4\circular.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ex4.dir
+  OBJECT_FILE_DIR = CMakeFiles\ex4.dir\ex4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ex4
+
+
+#############################################
+# Link the executable ex4.exe
+
+build ex4.exe: C_EXECUTABLE_LINKER__ex4_Debug CMakeFiles/ex4.dir/ex4/main.c.obj CMakeFiles/ex4.dir/ex4/circular.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ex4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ex4.exe
+  TARGET_IMPLIB = libex4.dll.a
+  TARGET_PDB = ex4.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -189,6 +228,8 @@ build ex2: phony ex2.exe
 
 build ex3: phony ex3.exe
 
+build ex4: phony ex4.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -197,7 +238,7 @@ build ex3: phony ex3.exe
 #############################################
 # Folder: C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Ficha9/cmake-build-debug
 
-build all: phony ex1.exe ex2.exe ex3.exe
+build all: phony ex1.exe ex2.exe ex3.exe ex4.exe
 
 # =============================================================================
 # Built-in targets

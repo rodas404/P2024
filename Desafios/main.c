@@ -1,13 +1,22 @@
 #include <stdio.h>
+#include <string.h>
 
-void teste(int *a){
-    int *p = a;
-    p[1]= 8;
+void f1(int* a, int tam){
+    int i, *p = a;
+
+    for(i=0; i<tam; i++){
+        if(*p == a[tam-1])
+            *p = 0;
+        p++;
+    }
 }
 
-int main() {
-    int tab[3] = {0,1,2};
-    int tab2[2][2] = {{1,2}, {3,4}};
-    printf("%d", tab2[1]);
+int main(){
+    int tab[5] = {1, 2, 1, 2, 1}, i;
+
+    f1(tab, 5);
+    for(i=0; i<5; i++){
+        printf("%d ", tab[i]);
+    }
     return 0;
 }

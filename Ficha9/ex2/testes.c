@@ -127,10 +127,6 @@ int mesmaSala(pno p, char* aluno1, char* aluno2){
         return 0;
 }
 
-void mostraSalas(struct sala *s, int tam){
-    for(int i=0; i<tam; i++)
-        printf("sala %s\n", s[i].id);
-}
 struct sala* transfereAl(pno lista, struct sala *s, int *tot, char *nome, char *nSala){
     pno atual = lista;
     struct sala* salaAntiga = NULL;

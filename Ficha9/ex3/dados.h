@@ -13,4 +13,7 @@ struct dados{
 
 pno insere(pno p, int val);
 void mostra(pno p);
+void mostraInverso(pno p);
+pno elimina(pno p, int val);
+void media(pno p);
 #endif //FICHA9_DADOS_H

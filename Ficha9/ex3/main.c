@@ -29,10 +29,15 @@ int main(){
                 mostra(lista);
                 break;
             case 3:
+                mostraInverso(lista);
                 break;
             case 4:
+                printf("Valor a eliminar:");
+                scanf("%d", &val);
+                lista = elimina(lista, val);
                 break;
             case 5:
+                media(lista);
                 break;
             case 6:
                 break;
