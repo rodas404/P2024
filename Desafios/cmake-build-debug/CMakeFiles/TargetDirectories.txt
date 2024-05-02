@@ -1,5 +1,6 @@
 C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug/CMakeFiles/testes.dir
 C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug/CMakeFiles/desafio1.dir
 C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug/CMakeFiles/desafio2.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug/CMakeFiles/desafio3.dir
 C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug/CMakeFiles/rebuild_cache.dir
