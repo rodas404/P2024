@@ -4,10 +4,10 @@
 int main() {
     pno l1=NULL, l2=NULL, l3=NULL, l4 = NULL, lteste = NULL;
 
-    lteste = criaLista((no[]){{"B",5, NULL},{"C",3, NULL},{"D",1, NULL},{"E",6, NULL},{"F",7, NULL}, {"G",4, NULL}}, 6);
+    lteste = criaLista((no[]){{"A",5, NULL},{"C",3, NULL},{"D",1, NULL},{"E",6, NULL},{"F",7, NULL}, {"G",4, NULL}}, 6);
     printf("\n\nLista teste inicial:\n");
     mostraLista(lteste);
-    lteste = desafio3(lteste, "E", "A");
+    lteste = desafio3(lteste, "D", "AA");
     printf("\nLista teste final: \n");
     mostraLista(lteste);
 
