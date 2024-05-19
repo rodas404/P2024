@@ -96,13 +96,111 @@ void printFileInv(char *nomeF) {
 // Recebe nome do ficheiro, identificacaos clientes envolvidos na operacaa e montante a transferir
 // Devolve 1 se a transferencia for efetuada com sucesso, ou 0, caso contrario
 int transfere(char *nomeF, char *or, char *dest, int valor){
+    cliente a[20];
+    int num = 0, i, j, flag = 0;
 
-    return 0;
+    FILE *f;
+
+    f = fopen(nomeF, "r+b");
+    if(f == NULL){
+        printf("Erro no acesso ao ficheiro.\n"); return 0;
+    }
+    while(fread(&a[num], sizeof(cliente), 1, f) == 1)
+        num++;
+
+    for(i=0; i<num; i++){
+        if(strcmp(a[i].nome, or) == 0){
+            flag = 1;
+            if(a[i].montante - valor >= 0){
+                a[i].montante -= valor;
+            }
+            else{
+                printf("montante insuficiente na conta do cliente %s\n", or);
+                fclose(f);
+                return 0;
+            }
+            break;
+        }
+    }
+
+    if(!flag){
+        printf("cliente %s nao encontrado\n", or);
+        fclose(f);
+        return 0;
+    }
+
+    flag = 0;
+    for(j=0; j<num; j++){
+        if(strcmp(a[j].nome, dest) == 0){
+            flag = 1;
+            a[j].montante += valor;
+            break;
+        }
+    }
+    if(!flag){
+        printf("cliente %s nao encontrado\n", dest);
+        fclose(f);
+        return 0;
+    }
+
+    fseek(f, 0, SEEK_SET);
+    fwrite(a, sizeof(cliente), num, f);
+
+    fclose(f);
+    return 1;
 }
 
 // Elimina um cliente do ficheiro, mantendo a ordem alfabetica
 // Recebe nome do ficheiro e nome do cliente a eliminar
 // Devolve 1 se a eliminação for efetuada com sucesso, ou 0, caso contrario
 int eliminaC(char *nomeF, char *nome){
-    return 0;
+    cliente a[20];
+    int num = 0, i, flag = 0;
+
+    FILE *f = fopen(nomeF, "rb");
+    if(f == NULL){
+        printf("Erro no acesso ao ficheiro.\n");
+        return 0;
+    }
+
+    FILE *g = fopen("temp.dat", "wb");
+    if(g == NULL){
+        printf("Erro ao criar ficheiro temporario.\n");
+        fclose(f);
+        return 0;
+    }
+
+    while(fread(&a[num], sizeof(cliente), 1, f) == 1)
+        num++;
+
+    for(i = 0; i < num; i++){
+        if(strcmp(a[i].nome, nome) != 0){
+            if(fwrite(&a[i], sizeof(cliente), 1, g) != 1){
+                printf("Erro ao escrever no ficheiro temporário.\n");
+                fclose(f);
+                fclose(g);
+                remove("temp.dat");
+                return 0;
+            }
+        } else {
+            flag = 1; // Cliente encontrado e não será copiado para o ficheiro temporário
+        }
+    }
+
+    fclose(f);
+    fclose(g);
+
+    if(flag){
+        remove(nomeF);
+        if(rename("temp.dat", nomeF) != 0){
+            printf("Erro ao renomear ficheiro temporario.\n");
+            return 0;
+        }
+    } else {
+        remove("temp.dat");
+        printf("Cliente %s nao encontrado.\n", nome);
+        return 0;
+    }
+
+    return 1;
 }

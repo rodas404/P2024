@@ -18,5 +18,7 @@ int main(){
 
     printFile("bancoA.dat");
 
+
+
     return 0;
 }
