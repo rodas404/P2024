@@ -68,12 +68,12 @@ pno desafio3(pno lista, char *velhoID, char* novoID){
         if(i % 2 == 0 || strcmp(atual->id, velhoID) == 0){ //condicao principal ativada nos 2 casos principais
             pno aux = atual;
             atual = atual->prox;
-            
+
             if(anterior != NULL) //caso o no em causa nao seja o primeiro
                 anterior->prox = atual;
             else
                 lista = atual;
-            
+
             if(strcmp(aux->id, velhoID) == 0 && i % 2 != 0) //se for o no com o velhoId e nao par desconecta da lista
                 auxID = aux;
             else //se for um no par liberta da memoria

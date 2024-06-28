@@ -1,0 +1,5 @@
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2024N/cmake-build-debug/CMakeFiles/ex1.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2024N/cmake-build-debug/CMakeFiles/ex2.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2024N/cmake-build-debug/CMakeFiles/ex4.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2024N/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2024N/cmake-build-debug/CMakeFiles/rebuild_cache.dir

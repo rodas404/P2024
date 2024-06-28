@@ -2,6 +2,42 @@
 	"entries" : 
 	[
 		{
+			"name" : "2023N_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2023N/cmake-build-debug"
+		},
+		{
+			"name" : "2023N_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "2023N_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2023N"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -55,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug"
+			"value" : "c:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2023N/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +467,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2023N/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios"
+			"value" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Exames/2023N"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -515,7 +551,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/Desafios"
+			"value" : "C:/Program Files (x86)/2023N"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -731,7 +767,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Desafios"
+			"value" : "2023N"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1124,42 +1160,6 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
-		},
-		{
-			"name" : "Desafios_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios/cmake-build-debug"
-		},
-		{
-			"name" : "Desafios_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "Desafios_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/footr/OneDrive/Documentos/Uni/P/Pratica/Desafios"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
