@@ -97,7 +97,7 @@ void mostraMovsConta(mov *tab, int total, char *nconta){
 
 mov *eliminaMovs(mov *tab, int *total, data d){
     int i, j;
-    for(i=0; i<(*total); i++)
+    for(i=0; i<(*total); i++){
         if(tab[i].dMov.a == d.a && tab[i].dMov.m == d.m && tab[i].dMov.d == d.d) {
             for(j=i; j<(*total)-1; j++)
                 tab[j] = tab[j+1];
@@ -109,5 +109,6 @@ mov *eliminaMovs(mov *tab, int *total, data d){
             }
             i--;
         }
+    }
     return tab;
 }

@@ -33,10 +33,10 @@ void criarFicheiroBinario() {
     fwrite(&numLivros, sizeof(int), 1, fp);
 
     livro livros[] = {
-            {"A Casa", "3X5RT", 12, 18.9},
-            {"O Gato", "DFG544", 12, 25.0},
-            {"O Pato", "ASD23", 37, 9.1},
-            {"O Jardim", "PDF12", 12, 31.5}
+            {"A Casa", "3X5RT", 12, 10},
+            {"O Gato", "DFG544", 12, 40},
+            {"O Pato", "ASD23", 37, 30},
+            {"O Jardim", "PDF12", 12, 20}
     };
     fwrite(livros, sizeof(livro), numLivros, fp);
 
@@ -93,7 +93,7 @@ int ex1(char *nomeF, int id){
             fseek(f, -sizeof(livro), SEEK_CUR);
             fwrite(&l, sizeof(livro), 1, f);
             fseek(f, 0, SEEK_CUR);
-            printf("Novo preco de '%s': %f\n", l.titulo, l.preco);
+            printf("Novo preco de '%s': %.2f\n", l.titulo, l.preco);
         }
         if(l.idA == id){
             fprintf(newF, "%s - %s, %s\n", l.isbn, l.titulo, nomeID);
