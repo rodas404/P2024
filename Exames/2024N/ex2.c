@@ -19,13 +19,13 @@ struct dadosSala{
 
 
 
-void ex2(pUc *uc, int tam, char *sala){
+void ex2(pUc uc, int tam, char *sala){
     printf("A %s recebe os exames de:\n",sala);
     for(int i=0; i<tam; i++){
-        pSala salas = uc[i]->lista;
+        pSala salas = uc[i].lista;
         while(salas != NULL){
             if(strcmp(salas->refSala, sala) ==0){
-                printf(" - %s\n", uc[i]->refUc);
+                printf(" - %s\n", uc[i].refUc);
             }
             salas = salas->prox;
         }
@@ -33,14 +33,14 @@ void ex2(pUc *uc, int tam, char *sala){
 }
 
 //----------em principio e isto, mas pode conter erros-------
-pUc elimina(pUc *v, int *nUcs, data d){
+pUc elimina(pUc v, int *nUcs, data d){
     for(int i=0; i<(*nUcs); i++){
-        if ((v[i]->dataEx.ano < d.ano) ||
-            (v[i]->dataEx.ano == d.ano && v[i]->dataEx.mes < d.mes) ||
-            (v[i]->dataEx.ano == d.ano && v[i]->dataEx.mes == d.mes && v[i]->dataEx.dia < d.dia)) {
+        if ((v[i].dataEx.ano < d.ano) ||
+            (v[i].dataEx.ano == d.ano && v[i].dataEx.mes < d.mes) ||
+            (v[i].dataEx.ano == d.ano && v[i].dataEx.mes == d.mes && v[i].dataEx.dia < d.dia)) {
 
-            printf("vou remover a %s\n", v[i]->refUc);
-            pSala salas = v[i]->lista;
+            printf("vou remover a %s\n", v[i].refUc);
+            pSala salas = v[i].lista;
             while(salas != NULL){
                 pSala temp = salas;
                 salas = salas->prox;

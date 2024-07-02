@@ -70,17 +70,20 @@ pno criaAlunos(struct sala* s){
 }
 
 void mostraMaxSala(pno p, struct sala* s, int tam){
-    int max = 0, i;
+    int max = 0, i, empate;
     struct sala* maxSala;
     for(i=0; i<tam; i++){
         if(max < s[i].total){
             max = s[i].total;
             maxSala = &s[i];
+            empate = 0;
         }
-        else if(max == s[i].total && max != 0)
-            return;
+        else if(max == s[i].total)
+            empate = 1;
     }
-
+    if(empate)
+        return;
+    
     printf("%d alunos farao prova na Sala %s, entre os quais:\n", max, maxSala->id);
     while(p != NULL){
         if(p->p == maxSala){
