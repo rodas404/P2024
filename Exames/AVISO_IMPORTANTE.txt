@@ -1,0 +1,1 @@
+Os exercicios 1 de todos os exames estão tecnicamente errados, porque os stores são uns conas e embora não mencionem nos enunciados, têm que usar memória dinâmica ao criar os arrays e fazer todo o tipo de verificações para os fscanfs, fwrite, etc 

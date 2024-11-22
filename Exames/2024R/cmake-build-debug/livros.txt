@@ -1,0 +1,5 @@
+A Casa dos Gatos # 12 # 10
+O Jardim # 37 # 12.5
+Coimbra sem Sol # 12 # 16.0
+A Praia # 12 # 12.0
+Natal em Novembro # 12 # 14.0

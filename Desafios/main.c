@@ -12,11 +12,12 @@ void f1(int* a, int tam){
 }
 
 int main(){
-    int tab[5] = {1, 2, 1, 2, 1}, i;
-
-    f1(tab, 5);
-    for(i=0; i<5; i++){
-        printf("%d ", tab[i]);
-    }
+    FILE *f;
+    f = fopen("teste.txt", "r");
+    int a;
+    char t[50];
+    float b;
+    fscanf(f, "%s # %d # %f", t, &a, &b);
+    printf("%s  %d  %f", t, a, b);
     return 0;
 }
